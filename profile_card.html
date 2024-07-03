@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Card</title>
     <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
       .card {
         height: 450px;
         width: 300px;
@@ -12,9 +18,8 @@
         border: 1px solid #ddd;
         box-shadow: 0px 0px 10px grey;
         border-radius: 10px;
-        padding: 20px;
-        margin-left: 38%;
-        margin-top: 5%;
+        padding: 20px 20px 80px 20px;
+
       }
 
       .card-image {
@@ -53,6 +58,9 @@
       h3.occupation {
         text-align: center;
       }
+      .email {
+        text-align: center;
+      }
       .stats1 {
         display: flex;
         justify-content: space-between;
@@ -72,6 +80,7 @@
         font-size: 16px;
         cursor: pointer;
         margin-top: 30px;
+        border-radius: 5px;
       }
       .card-btn2 {
         background-color: black;
@@ -82,6 +91,7 @@
         cursor: pointer;
         margin-top: 30px;
         margin-left: 90px;
+        border-radius: 5px;
       }
 
       .card-btn:hover {
@@ -90,32 +100,36 @@
     </style>
   </head>
   <body>
-    <div class="card">
-      <div class="card-image">
-        <img src="web_developer.jpg" alt="Card Image" class="circle-image" />
-      </div>
-      <div class="card-content">
-        <h2 class="Name">Tonmoy Mohajan</h2>
-        <h3 class="occupation">Ui/Ux Designer</h3>
-        <p class="Description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
-          nulla auctor, vestibulum magna sed, convallis ex.
-        </p>
-        <div class="stats1">
-          <span>Projects</span>
-          <span>Followers</span>
-          <span>Following</span>
-        </div>
-        <div class="stats2">
-          <span><b>5</b></span>
-          <span><b>100</b></span>
-          <span><b>130</b></span>
-        </div>
-        <div class="button">
-          <button class="card-btn1">Follow</button>
-          <button class="card-btn2">Hire</button>
-        </div>
-      </div>
+    <div class="container">
+        <div class="card">
+            <div class="card-image">
+              <img src="web_developer.jpg" alt="Card Image" class="circle-image" />
+            </div>
+            <div class="card-content">
+              <h2 class="Name">Tonmoy Mohajan</h2>
+              <h3 class="occupation">Full Stack Developer</h3>
+              <p class="Description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
+                nulla auctor, vestibulum magna sed, convallis ex.
+              </p>
+              <p class="email">developer@gmail.com <br>+8801822993921</p>
+              <p></p>
+              <div class="stats1">
+                <span>Projects</span>
+                <span>Followers</span>
+                <span>Following</span>
+              </div>
+              <div class="stats2">
+                <span><b>5</b></span>
+                <span><b>100</b></span>
+                <span><b>130</b></span>
+              </div>
+              <div class="button">
+                <button class="card-btn1">Follow</button>
+                <button class="card-btn2">Hire</button>
+              </div>
+            </div>
+          </div>
     </div>
   </body>
 </html>
